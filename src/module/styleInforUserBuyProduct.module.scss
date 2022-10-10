@@ -1,0 +1,59 @@
+
+
+.form_buy_product{
+    
+
+    .title_form{
+        text-align: center;
+    }
+
+    .content_form{
+
+        display: flex;
+
+        .infor_user{
+
+            flex: 1;
+            padding: 10px;
+
+            .title_infor_user{
+                padding: 5px 0px;
+            }
+
+            .content{
+                outline: none;
+                font-size: 14px;
+                height: 30px;
+                width: 98%;
+            }
+        }
+
+        .infor_product{
+            flex: 1;
+            padding: 10px;
+            width: 70%;
+
+            .infor_product_sub{
+                display: flex;
+                margin-top: 10px;
+
+                .infor_product_sub_content{
+
+                    .title_infor_product{
+                        padding-bottom: 10px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.title{
+    font-size: 16px;
+    color: rgba(7, 7, 7, 0.5);
+    text-align: center;
+}

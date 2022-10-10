@@ -1,0 +1,21 @@
+
+
+.showProduct{
+    width: 90%;
+    padding: 0 100px;
+
+
+    .content{
+        display: flex;
+    }
+
+    .pageSize{
+        text-align: center;
+
+        .btn_pageSize{
+            padding: 10px 15px;
+            margin-left: 5px;
+        }
+    }
+
+}

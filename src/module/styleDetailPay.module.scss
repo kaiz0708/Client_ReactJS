@@ -1,0 +1,97 @@
+
+.detail_pay{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 14px;
+
+    .form{
+        background-color: white;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        border-radius: 3px;
+
+        .infor_user{
+            padding: 10px;
+        }
+
+        .infor_bill{
+
+            padding: 10px;
+
+            .infor_bill_nav{
+
+                display: flex;
+                justify-content: space-around;
+
+                .picture_product{
+
+                }
+
+                .infor_bill_sub{
+
+                }
+
+            }
+ 
+        }
+
+        .exit{
+
+            position: relative;
+            height: 25px;
+            
+            .btn_exit{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                border-radius: 3px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                display: flex;
+
+                &:hover{
+                    background-color: #f44336;
+                    color: white;
+                }
+            }
+
+        }
+
+        .exit_tag{
+
+            text-align: end;
+            padding: 10px;
+
+            .btn_exit{
+                padding: 5px  10px;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.infor_sub{
+    padding: 5px 0px;
+}

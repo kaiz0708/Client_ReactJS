@@ -1,0 +1,97 @@
+@mixin content {
+    height: 30px;
+    font-size: 14px;
+    outline: none;
+    width: 99%;
+}
+
+.form_update{
+
+    border: 1px solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 14px;
+
+    .form{
+
+        background-color: white;
+        width: 30%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 3px;
+        padding: 10px;
+        overflow-y: scroll;
+
+        .infor_basic{
+
+
+            .basic_infor_update{
+                @include content();
+            }
+
+        }
+
+        .size_color{
+
+
+            .structure_size{
+                
+                .structure_size_update, .structure_quantity_update{
+                    @include content();
+                }
+
+            }
+
+            .structure_color{
+                
+                .structure_color_update{
+                    @include content();
+                }
+                
+            }
+
+        }
+
+        .describe{
+
+
+            .describe_sub{
+                @include content();
+            }
+        }
+
+        .btn_footer{
+
+            display: flex;
+            justify-content: space-between;
+
+            .btn_nav{
+                background-color: black;
+                color: white;
+                padding: 5px 10px;
+            }
+
+        }
+
+
+    }
+
+}
+
+.title_parent{
+    text-align: center;
+}
+
+.title {
+    color :rgba(7, 7, 7, 0.5);
+    padding: 5px 0px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,299 @@
+
+.infor_product{
+
+    margin-top: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    .content_infor_product{
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .picture_product{
+            flex: 1;
+        }
+
+        .content_product{
+            font-size: 14px;
+            flex: 1;
+            .infor_basic{
+                padding-bottom: 10px;
+
+                .name{
+                    padding-bottom: 10px;
+                }
+
+                .brand{
+                    padding-bottom: 10px;
+                }
+
+                .cost{
+                    padding-bottom: 10px;
+                }
+
+                .discount{
+                    padding-bottom: 10px;
+                }
+
+            }
+
+            .size{
+
+                padding-bottom: 10px;
+
+
+                .listSize{
+
+                    display: flex;
+
+                    .size_sub{
+                        color: #8A8A8F;
+                        border: 1px solid #8A8A8F;
+                        width: 40px;
+                        padding: 5px;
+                        border-radius: 2px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .color{
+
+                padding-bottom: 10px;
+
+                .color_product{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                }
+
+            }
+
+            .quantity{
+                width: 108px;
+
+                padding-bottom: 10px;
+
+                .choose_quantity{
+
+                    display: flex;
+                    .btn_quantity{
+                        background-color: transparent;
+                        border: 1px solid #8A8A8F;
+                        padding: 5px 10px;
+                    }
+
+                    .option_quantity{
+                        padding: 10px 14px;
+                        border-top: 1px solid #8A8A8F;
+                        border-bottom: 1px solid #8A8A8F;
+                    }
+                }
+            }
+
+            .describe{
+
+
+                .describe_sub{
+                    padding-bottom: 10px;
+                }
+
+            }
+
+        }
+    }
+
+    .feed_back_parent{
+
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 14px;
+
+        .feed_back{
+            margin-left: auto;
+            width: 30%;
+            background-color: white;
+            height: 50%;
+            padding:0px 10px;
+            overflow-y: scroll;
+
+            .title_form{
+                font-size: 18px;
+            }
+
+            .list_feedback{
+                margin-top: 10px;
+            }
+
+
+        .form_feedback{
+
+
+            .content_feedback{
+                width: 60% ;
+                height: 30px;
+                font-size: 14px;
+                outline: none;
+                border: 0;
+                border-bottom: 1px solid #8A8A8F;
+            }
+
+            .btn_add_feedback{
+                padding: 5px 10px;
+                color: white;
+                background-color: black;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-right: 5px;
+
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        
+    }
+}
+
+    
+
+    
+
+    .form_buy_product_parent{
+        border: 1px solid;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 14px;
+
+        .form_buy_product_sub{
+            background-color: white;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            border-radius: 3px;
+
+            .btn_nav{
+                display: flex;
+                padding: 10px;
+                justify-content: space-between;
+
+                .btn_nav_sub{
+                    padding: 5px 10px;
+                    color: white;
+                    background-color: black;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    margin-right: 5px;
+
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.user_function{
+
+    .addcart{
+        width: 60%;
+        padding-bottom: 10px;
+
+        .btn_addcart{
+            width: 100%;
+            background-color: transparent;
+            color: black;
+            border:  1px solid #8A8A8F;
+            height: 40px;
+            cursor: pointer;
+        }
+
+    }
+
+    .buy_product{
+
+        width: 60%;
+
+        .btn_buy_product{
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 40px;
+            cursor: pointer;
+        }
+
+
+        .btn_show_feedback{
+            background-color: white;
+            width: 100%;
+            color: black;
+            height: 40px;
+            cursor: pointer;
+            margin-top: 10px;
+            border:  1px solid #8A8A8F;
+        }
+
+    }
+
+
+}
+
+.title{
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+//admin
+
+.update_product_admin{
+
+    .btn_update_product_admin{
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+}
+
+.exit{
+
+    position: relative;
+    height: 25px;
+
+    .btn_exit{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border-radius: 3px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        display: flex;
+
+        &:hover{
+            background-color: #f44336;
+            color: white;
+        }
+    }
+
+}

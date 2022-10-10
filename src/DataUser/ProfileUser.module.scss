@@ -1,0 +1,80 @@
+
+
+.profile{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .content_profile{
+
+        display: flex;
+
+        .avatar{
+            flex: 1;
+
+            .picture_avatar{
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #efefef;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+
+        }
+
+       .infor_user{
+            flex: 1;
+
+
+            .title{
+                font-size: 14px;
+                color: #8A8A8F;
+                padding: 10px 0px;
+            }
+
+            .content{
+                width: 80%;
+                height: 30px;
+                outline: none;
+                padding: 0px 5px;
+                font-size: 14px;
+            }
+       } 
+
+       .other{
+
+       }
+
+
+    }
+}
+
+.btn_update{
+    padding: 10px 0px;
+
+    .btn_update_sub{
+        padding: 8px 18px;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+}
+
+.line{
+    width: 1px;
+    background-color: #efefef;
+}
+
+.profile_text_dicoration{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+}

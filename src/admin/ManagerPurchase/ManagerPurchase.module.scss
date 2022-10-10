@@ -1,0 +1,45 @@
+@mixin list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.manager_purchase{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .nav_purchase{
+        display: flex;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    }
+
+    .nav_purchase_sub{
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+        border: 2px solid white;
+        padding: 10px 0px;
+    }
+
+}
+
+
+.list_bill_admin{
+   @include list();
+}
+
+.status_bill{
+
+    @include list();
+    height: 240px;
+    text-align: center;
+
+    .title{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}

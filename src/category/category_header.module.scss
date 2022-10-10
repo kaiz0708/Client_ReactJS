@@ -1,0 +1,52 @@
+
+
+.category{
+
+    .category_parent{
+
+        position: relative;
+        width: 100px;
+        padding: 10px;
+
+        &:hover{
+            .category_subs{
+                display: block;
+            }
+            background-color: #F2F2F2;
+        }
+
+
+        .category_subs{
+            display: none;
+            position: absolute;
+            background-color: white;
+            left: 100px;
+            padding: 5px;
+            top: -10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            .category_sub{
+                padding: 10px;
+
+                &:hover{
+                    background-color: #F2F2F2;
+                }
+            }
+
+
+        }
+    }
+
+    
+
+}
+
+
+
+
+
+
+.header_text_dicoration{
+    text-decoration: none;
+    color: #070707;
+}

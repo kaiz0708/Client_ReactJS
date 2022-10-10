@@ -1,0 +1,201 @@
+@mixin account_property {
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.Header{
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #efefef;
+
+    .Header_sub_1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        line-height: 40px;
+        padding: 0 20px;
+    }
+
+    .Header_sub_2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+        height: 100px;
+
+        .brand{
+            position: relative;
+            display: flex;
+            .brand_picture{
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+
+        .category_parent{
+            display: flex;
+
+            .category_sub{
+                position: relative;
+                display: inline-block;
+                margin-top: auto;
+                margin-bottom: auto;
+                padding: 20px;
+
+                &:hover{
+                    .listCategory{
+                        display: block;
+                    }
+                }
+
+                .listCategory{
+                    display: none;
+                    position: absolute;
+                    padding: 5px;
+                    background-color: white;
+                    top: 100%;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    z-index: 1;
+                }
+
+            }
+        }
+
+        .account{
+            display: flex;
+
+            .search{
+                @include account_property();
+                &:hover {
+                    .content_search{
+                        visibility: visible;
+                    }
+                }
+
+                .content_search{
+                    visibility: hidden;
+                    position: absolute;
+                    top: 100%;
+                    left: 3px;
+                    width: 300px;
+                    height: 35px;
+                    display: flex;
+                    z-index: 1;
+
+                    .input_content {
+                        width: 80%;
+                        padding: 0 5px;
+                        outline: none;
+                    }
+
+                    .button_search{
+                        width: 20%;
+                        background-color: black;
+                        border: 0;
+                    }
+
+                }
+
+                
+
+            }
+
+            .account {
+                @include account_property();
+                &:hover {
+                    .btn_nav{
+                        display: block;
+                    }
+                }
+
+                .btn_nav{
+
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    z-index: 1;
+                    background-color: white;
+
+                    .btn_nav_sub{
+                        text-decoration: none;
+                        color: black;
+                        padding: 20px;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: #F2F2F2
+                        }
+                    }
+
+                }
+
+            }
+
+            .cart_user{
+                @include account_property();
+                &:hover{
+                    .cart{
+                        display: block;
+                    }
+                }
+
+                .cart{
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    top : 100%;
+                    width: 350px;
+                    left: -150px;
+                    padding: 5px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    z-index: 1;
+                    .card_sub{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #F2F2F2;
+
+                        .content_card{
+                            width: 70%;
+                        }
+
+                        &:hover{
+                            background-color: #F2F2F2;
+                        }
+                    }
+
+
+                    .watch_card{
+                        text-align: center;
+                        padding: 5px;
+                        padding-top: 5px;
+
+                        &:hover {
+                            background-color: #F2F2F2;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+.header_text_decoration {
+    text-decoration: none;
+    color: black;
+}
+
+.line_height{
+    border: 1px solid black;
+}
+
+//Admin 
+

@@ -1,0 +1,39 @@
+
+
+
+.contain_category{
+    width: 20%;
+    .listCategory{
+        font-size: 14px;
+
+        .category{
+
+            .category_parent {
+                padding-top: 5px;
+            }
+
+            .category_list_sub{
+
+                .category_sub{
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.category_text_dicoration{
+    text-decoration: none;
+}
+
+.category_link{
+    color: #070707 ;
+}
+
+.category_link_sub{
+    color: #8A8A8F;
+}

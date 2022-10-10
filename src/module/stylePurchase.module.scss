@@ -1,0 +1,68 @@
+
+
+.purchase_sub{
+
+    padding: 10px 0px;
+
+    .infor_basic_bill{
+        display: flex;
+        font-size: 14px;
+        padding-bottom: 10px;
+
+        .infor_basic{
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            
+
+            .detail{
+
+                margin-top: auto;
+                margin-bottom: auto;
+
+                .title{
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: black;
+                }
+
+                .size{
+                    color : rgba(7, 7, 7, 0.5)
+                }
+
+                .quantity{
+                    color: rgba(7, 7, 7, 0.5);
+                }
+            }
+        }
+
+        .cost , .status_bill{
+            flex: 1;
+            text-align: end;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    .sum_cost{
+        padding: 10px 0px;
+        border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+        text-align: end;
+    }
+
+    .btn_nav_function{
+        text-align: end;
+        padding: 10px 0px;
+    }
+}
+
+
+.btn_nav{
+    padding: 5px 10px;
+    background-color: black;
+    color: #efefef;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
